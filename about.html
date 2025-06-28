@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franklite – Baby Cars, Bikes & More!</title>
     <link rel="icon" href="image/logo.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -18,9 +19,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
-
-
 </head>
 
 <body>
@@ -30,7 +28,7 @@
         <nav class="navbar col-lg-5 col-md-12">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="image/logo.png" alt="logo" class="w-50">
+                    <img src="image/logo-gif.gif" alt="logo" class="w-50">
                 </a>
             </div>
         </nav>
@@ -70,7 +68,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+                            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#product">Product</a>
@@ -78,9 +76,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
                         </li>
-
+                        
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                         </li>
 
                         <!-- <li class="nav-item dropdown">
@@ -99,11 +97,15 @@
                         </li> -->
                     </ul>
                 </div>
-                <button class="btn main-btn fir-btn"> <a href="tel:+919910320920"><i class="fa-solid fa-phone"></i>
-                        Contact Now</a>
-                </button>
-                <button class="btn main-btn sec-btn"> <a href="tel:+919910320920"><i class="fa-solid fa-phone"></i></a>
-                </button>
+                <!-- Main Download Button -->
+                <a href="pdf/PREM SONY.pdf" class="btn main-btn fir-btn text-white" download>
+                    <i class="fa fa-download"></i> Download PDF
+                </a>
+
+                <!-- Icon-Only Download Button -->
+                <a href="pdf/PREM SONY.pdf" class="btn main-btn sec-btn" download>
+                    <i class="fa fa-download"></i>
+                </a>
 
             </div>
         </nav>
@@ -132,9 +134,58 @@
     </div>
 
     <!-- home-banner section end -->
+<div class="d-none container py-5">
+  <div class="row mb-4">
+    <div class="col-lg-6">
+  <span class="text-uppercase text-danger fw-bold">About Us</span>
+  <h2 class="section-title mt-2">Welcome To <span class="highlight">Franklite</span> <br> Little Boys Bike & Kids Store!</h2>
+  <p class="text-muted mt-3">At Franklite, we bring joy to kids with our range of high-quality bikes, toys, and fun accessories designed just for them.</p>
+  <p class="text-muted">Whether it’s their first bike or their next favorite toy, we make every moment special with trusted products and affordable prices.</p>
+
+  <div class="row mt-4">
+    <div class="col-md-4 mb-3">
+      <div class="feature-box">
+        <i class="bi bi-cash-stack"></i>
+        <h6 class="mt-2">Best Price</h6>
+        <p class="text-muted small">Great quality kids’ products at pocket-friendly rates.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="feature-box">
+        <i class="bi bi-graph-up"></i>
+        <h6 class="mt-2">Trusted Quality</h6>
+        <p class="text-muted small">Every item is carefully chosen for safety and fun.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="feature-box">
+        <i class="bi bi-people-fill"></i>
+        <h6 class="mt-2">Happy Customers</h6>
+        <p class="text-muted small">Thousands of parents trust Franklite for their kids.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+    <div class="col-lg-6">
+      <div class="row g-3">
+        <div class="col-12">
+          <img src="image/ban-sec-1.jpg" class="img-fluid" alt="Team Working">
+        </div>
+        <div class="col-12">
+          <div class="video-container">
+            <img src="image/video-thumb.jpg" class="img-fluid" alt="Video">
+            <a href="#" class="video-btn"><i class="bi bi-play-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+
+<!-- footer section start -->
 
     <footer id="footer" class="footer">
 
@@ -144,7 +195,7 @@
 
                     <div data-aos="zoom-in" data-aos-delay="100" class="col-lg-3 col-md-6">
                         <div class="footer-info">
-                            <img class="img-fluid w-100" src="image/logo.png" alt="">
+                            <img class="img-fluid w-100" src="image/logo-gif.gif" alt="">
                             <br>
                             <p class="">Explore fun and safe ride-on toys like Bazuka, City Bike, Duke Bike, and more.
                                 Designed for toddlers to enjoy comfort, adventure, and endless playtime moments.</p>
@@ -238,6 +289,7 @@
 
 
     <!-- footer section end-->
+
 
 
 
