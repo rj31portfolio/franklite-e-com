@@ -1,0 +1,54 @@
+
+@media only screen and (max-width: 540px) {
+  .footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+.fir-banner .half-img {
+    margin-top: 0px;
+}
+.fir-banner .img-box{
+  margin-bottom: 10px;
+}
+.section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+.navbar-brand{
+  display: flex;
+  justify-content: center;
+}
+.header-left{
+  display: none;
+}
+.header-2 .btn i {
+      margin-right:0;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+  .footer .footer-content .footer-links{
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+.header-2 .sec-btn{
+  display: block;
+}
+.header-2 .fir-btn{
+  display: none;
+}
+.header-1{
+  padding-top:0px ;
+    padding-bottom:0px ;
+
+}
+}
