@@ -345,7 +345,33 @@ a {
 
 
 /* fir-banner section end */
+/* contact section start */
+  .form-control {
+    background-color: transparent !important;
+    border: 1px solid #ccc; /* You can change border color or remove it */
+    color: #000; /* Text color inside inputs */
+  }
 
+  .form-control::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Optional: for better placeholder visibility */
+  }
+
+  .form-control:focus {
+    background-color: transparent !important;
+    box-shadow: none;
+    border-color: #007bff; /* Highlight color on focus */
+  }
+
+  .input-group-text {
+    background-color: transparent !important;
+    border: 1px solid #ccc;
+  }
+
+  textarea.form-control {
+    background-color: transparent !important;
+  }
+
+/* contact section end */
 
 /* gallery section start */
 .gallery .main-box {
