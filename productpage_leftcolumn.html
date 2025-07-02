@@ -19,36 +19,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <style>
-    .feature-card {
-      background-color: #fff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      padding: 30px;
-      text-align: center;
-      transition: all 0.3s ease;
-      border-radius: 10px;
+   .product-title {
+      font-size: 20px;
+      font-weight: bold;
     }
-    .feature-card:hover {
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    .product-price {
+      font-size: 24px;
+      color: #000;
     }
-    .feature-icon {
-      font-size: 30px;
-      color: #ff69b4; /* light pink */
+    .thumbnail-img {
+      height: 60px;
+      width: 60px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    .color-dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .sidebar-product {
+      font-size: 14px;
       margin-bottom: 15px;
     }
-    .light-pink-btn {
-      background-color: #ff69b4;
-      border: none;
-      color: #fff;
+    .policy-box {
+      border: 1px solid #ddd;
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 10px;
     }
-    .light-pink-btn:hover {
-      background-color: #ff85c1;
+    .payment-icons img {
+      height: 24px;
+      margin-right: 5px;
     }
-    </style>
+    .tab-content {
+      font-size: 14px;
+    }
+    .tab-buttons .btn {
+      border-radius: 0;
+    }
+  </style>
 </head>
 
 <body>
 
-     <!-- header section start -->
+    <!-- header section start -->
     <div class="container header-1 d-flex flex-wrap ">
         <nav class="navbar col-lg-5 col-md-12">
             <div class="container">
@@ -96,9 +117,11 @@
                             <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="shop.html">Product</a>
+                            <a class="nav-link active" aria-current="page" href="#product">Product</a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
+                        </li>
                         
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
@@ -135,173 +158,133 @@
 
     </div>
     <!-- header section end -->
+   <div class="container my-5">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-lg-3">
+      <h5>WOMEN</h5>
+      <ul class="list-unstyled">
+        <li><a href="#">Tops</a></li>
+        <li><a href="#">Dresses</a></li>
+        <li><a href="#">Sarees</a></li>
+      </ul>
 
-
-    <!-- home-banner section start -->
-    <div class="container-fluid bg-info d-flex align-items-center flex-column ins-banner    ">
-
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active text-white fw-bold display-6" aria-current="about.html">About Us</li>
-            </ol>
-        </nav>
-
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="about.html">About Us</li>
-            </ol>
-        </nav>
-    </div>
-
-    <!-- home-banner section end -->
-<div class="container py-5">
-  <div class="row mb-4">
-    <div class="col-lg-6">
-  <span class="text-uppercase text-danger fw-bold">About Us</span>
-  <h2 class="section-title mt-2">Welcome To <span class="highlight">Franklite</span> <br> Little Boys Bike & Kids Store!</h2>
-  <p class="text-muted mt-3">At Franklite, we bring joy to kids with our range of high-quality bikes, toys, and fun accessories designed just for them.</p>
-  <p class="text-muted">Whether it’s their first bike or their next favorite toy, we make every moment special with trusted products and affordable prices.</p>
-
-  <div class="row mt-4">
-    <div class="col-md-4 mb-3">
-      <div class="feature-box">
-        <i class="fa-solid fa-thumbs-up"></i>
-        <h6 class="mt-2">Best Price</h6>
-        <p class="text-muted small">Great quality kids’ products at pocket-friendly rates.</p>
+      <h6 class="mt-4">NEW PRODUCTS</h6>
+      <div class="sidebar-product">
+        <img src="https://via.placeholder.com/60" class="me-2" alt="">
+        Pellentesque et pharetra <br><del>$50.00</del> <strong>$45.00</strong>
+      </div>
+      <div class="sidebar-product">
+        <img src="https://via.placeholder.com/60" class="me-2" alt="">
+        Vis feugiat delenti <br><del>$22.00</del> <strong>$21.85</strong>
+      </div>
+      <div class="sidebar-product">
+        <img src="https://via.placeholder.com/60" class="me-2" alt="">
+        Curabitur laoreet luctus <br> <strong>$50.00</strong>
+      </div>
+      <div class="sidebar-product">
+        <img src="https://via.placeholder.com/60" class="me-2" alt="">
+        Aliquam fringilla justo <br> <strong>$24.00</strong>
       </div>
     </div>
-    <div class="col-md-4 mb-3">
-      <div class="feature-box">
-        <i class="fa-solid fa-handshake-simple"></i>
-        <h6 class="mt-2">Trusted Quality</h6>
-        <p class="text-muted small">Every item is carefully chosen for safety and fun.</p>
+
+    <!-- Product Content -->
+    <div class="col-lg-9">
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid mb-3" alt="">
+          <div class="d-flex justify-content-center">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D" class="thumbnail-img" alt="">
+            <img src="https://via.placeholder.com/60" class="thumbnail-img" alt="">
+            <img src="https://via.placeholder.com/60" class="thumbnail-img" alt="">
+            <img src="https://via.placeholder.com/60" class="thumbnail-img" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="product-title">Aroma Mocha</div>
+          <p class="text-muted">Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat.</p>
+
+          <p>
+            ⭐⭐⭐⭐☆
+            <a href="#">Read Reviews</a> | <a href="#">Write Review</a>
+          </p>
+
+          <div class="mb-2">
+            <label for="size">Size</label>
+            <select id="size" class="form-select w-50">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </div>
+
+          <div class="mb-2">
+            <label>Color</label><br>
+            <span class="color-dot" style="background-color: #000;"></span>
+            <span class="color-dot" style="background-color: #f80;"></span>
+            <span class="color-dot" style="background-color: #f8c;"></span>
+          </div>
+
+          <div class="product-price mb-2">$50.00</div>
+
+          <div class="input-group w-50 mb-3">
+            <button class="btn btn-outline-secondary">-</button>
+            <input type="text" class="form-control text-center" value="1">
+            <button class="btn btn-outline-secondary">+</button>
+          </div>
+
+          <button class="btn btn-dark mb-2">Add to Cart</button>
+          <p class="text-success">✔ In Stock</p>
+
+          <div class="mb-3">
+            <span>Share:</span>
+            <a href="#" class="ms-2"><img src="https://img.icons8.com/color/24/facebook.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/24/google-plus.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/24/twitter--v1.png"/></a>
+          </div>
+
+          <div class="payment-icons mb-3">
+            <img src="https://img.icons8.com/color/48/mastercard-logo.png"/>
+            <img src="https://img.icons8.com/color/48/visa.png"/>
+            <img src="https://img.icons8.com/color/48/paypal.png"/>
+          </div>
+
+          <div class="policy-box">🔒 Security Policy (Edit With Customer Reassurance Module)</div>
+          <div class="policy-box">🚚 Delivery Policy (Edit With Customer Reassurance Module)</div>
+          <div class="policy-box">🔄 Return Policy (Edit With Customer Reassurance Module)</div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4 mb-3">
-      <div class="feature-box">
-        
-        <i class="fa-regular fa-face-smile"></i>
-        <h6 class="mt-2">Happy Customers</h6>
-        <p class="text-muted small">Thousands of parents trust Franklite for their kids.</p>
+
+      <!-- Tabs -->
+      <div class="mt-4">
+        <ul class="nav nav-tabs tab-buttons">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#desc">DESCRIPTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#details">PRODUCT DETAILS</a>
+          </li>
+         <!-- <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#reviews">REVIEWS</a>
+          </li> -->
+        </ul>
+        <div class="tab-content p-3 border border-top-0">
+          <div id="desc" class="tab-pane fade show active">
+            Fashion has been creating well-designed collections since 2010. The brand offers feminine designs.
+          </div>
+          <div id="details" class="tab-pane fade">
+            Soft, stretchy material. Made in Italy. Hand wash only. Available in multiple sizes.
+          </div>
+          <div id="reviews" class="tab-pane fade">
+            No reviews yet. Be the first to review!
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-
-    <div class="col-lg-6">
-      <div class="row g-3">
-        <div class="col-12">
-          <img src="image/thamnel.png" class="img-fluid" alt="Team Working">
-        </div>
-       <!-- <div class="col-12">
-          <div class="video-container">
-            <img src="image/thamnel.png" class="img-fluid" alt="Video">
-            <a href="#" class="video-btn"><i class="bi bi-play-fill"></i></a>
-          </div>
-        </div> -->
-      </div>
-    </div>
-  </div>
-</div>
-
-<section class="py-0">
-  <div class="container">
-    <div class="row g-5 align-items-center">
-      <!-- Left Content -->
-      <div class="col-md-6">
-        <p class="text-uppercase text-muted small">What We Do?</p>
-        <h2 class="fw-bold">We provide fun, safe and creative Bike for your little ones</h2>
-        <p class="text-muted mt-3">At Franklite, we bring joy and creativity through high-quality Bike designed to spark imagination and ensure safety. Shop from our wide range of toys suitable for all ages.</p>
-        <button class="btn light-pink-btn px-4 mt-3">More Details</button>
-      </div>
-
-      <!-- Right Feature Cards -->
-      <div class="col-md-6">
-        <div class="row g-3">
-          <div class="col-6">
-            <div class="feature-card h-100 feature-box">
-              <i class="fa fa-child" aria-hidden="true"></i>
-              <h5>Safe Toys</h5>
-              <p class="text-muted small">All our toys meet the highest safety standards and are non-toxic.</p>
-              
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="feature-card h-100 feature-box">
-              <i class="fa-solid fa-person-biking"></i>
-              <h5>Creative Play</h5>
-              <p class="text-muted small">Enhance your child's imagination with our creative toy collection.</p>
-             
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="feature-card h-100 feature-box">
-              <i class="fas fa-shipping-fast"></i>
-              <h5>Fast Delivery</h5>
-              <p class="text-muted small">Get your toys delivered quickly and safely to your doorstep.</p>
-              
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="feature-card h-100 feature-box">
-              <i class="fa-solid fa-phone"></i>
-              <h5>24/7 Support</h5>
-              <p class="text-muted small">Our team is here to help you anytime with your shopping experience.</p>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="py-5 ">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h6 class="text-uppercase text-muted">Our Mission</h6>
-      <h2 class="fw-bold">Bringing Smiles Through Safe and Creative Toys</h2>
-      <p class="text-muted mt-3">We aim to spark joy, creativity, and learning in every child through quality toys crafted with love and care.</p>
-    </div>
-
-    <div class="row align-items-center">
-      <!-- Mission Image -->
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img src="image/mission.png" class="img-fluid " alt="Our Mission">
-      </div>
-
-      <!-- Mission Text -->
-      <div class="col-md-6">
-        <div class="p-4 rounded-4 ">
-          <h4 class="fw-bold mb-3">Why Franklite?</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              <span class="me-2 text-pink">🧸</span>
-              <strong>Quality & Safety First:</strong> We adhere to international safety standards for every toy.
-            </li>
-            <li class="mb-3">
-              <span class="me-2 text-pink">🎯</span>
-              <strong>Creative Development:</strong> Every product is thoughtfully designed to inspire learning through play.
-            </li>
-            <li class="mb-3">
-              <span class="me-2 text-pink">🚚</span>
-              <strong>Fast & Reliable Delivery:</strong> Get your toys on time, every time with our secure shipping network.
-            </li>
-            <li class="mb-3">
-              <span class="me-2 text-pink">💬</span>
-              <strong>Customer Happiness:</strong> Our team is always available to make your experience smooth and delightful.
-            </li>
-          </ul>
-          <a href="#!" class="btn btn-lg mt-3" style="background-color:#ff69b4; color: white;">Explore Our Toys</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- footer section start -->
+       <!-- footer section start -->
 
     <footer id="footer" class="footer">
 
@@ -339,6 +322,7 @@
                             <li><i class="bi bi-chevron-right"></i> <a class="" href="#">Minni Boomer</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a class="" href="#">Tricycle</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a class="" href="#">Panther</a></li>
+
                         </ul>
                     </div>
 
@@ -385,6 +369,9 @@
                         Designed by <a href="https://viraladsmedia.com/">ViralAdsMedia</a>
                     </div>
                 </div>
+
+
+
             </div>
         </div>
 
@@ -400,7 +387,11 @@
 
 
 
+
     <!-- footer section end-->
+
+
+
 
 
     <div class="container">
